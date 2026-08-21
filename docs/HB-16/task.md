@@ -1,0 +1,3 @@
+# HB-16: Add cards
+
+New functionality is needed to add cards to the system. The client can have several cards, each account can have one card. Each card has a unique card number, an expiration, and CCV. There is a new endpoint to make a transaction using the card identifications. In the transactions, it must be clearly visible whether the transaction was made using the account or the card. The card number must be masked in the logs and in the database. The expiration must be validated to be a valid date in the future. The CCV must be validated to be a 3-digit number.
